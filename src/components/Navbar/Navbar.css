@@ -2,6 +2,78 @@
     border: none;
     outline: none;
 }
-.searchForm:focus{
+
+.searchForm:focus {
     border: 5px solid green;
+}
+
+/*  Drop Down of account*/
+
+.accountIcon:hover,
+.cartIcon:hover,
+.siteBranding:hover {
+    color: var(--primary) !important;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    top: -0.2rem !important;
+    right: 0.5rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    right: 0rem !important;
+}
+
+.dropdown-content a {
+    text-decoration: none !important;
+    color: black;
+    padding: 4px 0px
+}
+
+.dropdown-content a:hover {
+    color: var(--primary) !important;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* /End of account drop down */
+
+
+
+/* Respinsiveness */
+@media screen and (max-width: 992px) {
+    .navrightSide {
+        display: flex !important;
+        flex-direction: row !important;
+        /* gap: 2rem; */
+    }
+
+    .navLoginDropDown {
+        display: flex !important;
+        flex-direction: column !important;
+        flex-wrap: nowrap !important;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .searchForm {
+        display: none
+    }
+
+    .siteBranding {
+        margin-left: 0rem !important;
+    }
 }
