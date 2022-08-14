@@ -1,3 +1,6 @@
+.searchForm{
+    border-radius: 5px;
+}
 .searchForWeb {
     border: none;
     outline: none;
@@ -31,7 +34,7 @@
     min-width: 50px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
-    z-index: 1;
+    z-index: 99;
     right: 0rem !important;
 }
 
@@ -58,7 +61,6 @@
     .navrightSide {
         display: flex !important;
         flex-direction: row !important;
-        /* gap: 2rem; */
     }
 
     .navLoginDropDown {
@@ -75,5 +77,13 @@
 
     .siteBranding {
         margin-left: 0rem !important;
+    }
+}
+
+@media screen and (max-width: 578px) {
+
+    .accountIcon,
+    .cartIcon {
+        font-size: 1.8rem !important;
     }
 }

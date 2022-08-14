@@ -1,0 +1,25 @@
+.hero-section {
+    height: 65vh !important;
+    font-family: var(--main-font);
+}
+
+.heroImgs {
+    width: 100%;
+    height: 75vh !important;
+    transform: scale(0.8);
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    visibility: hidden !important;
+}
+
+.vanBtns:hover {
+    color: var(--primary);
+
+}
+
+.swiper-pagination-progressbar-fill{
+    background-color: var(--primary) !important;
+}

@@ -10,7 +10,7 @@ const Navbar = () => {
         let x = document.getElementById("searchForm");
         x.classList.remove("border");
         x.classList.remove("border-2");
-        x.style.border = "2px solid var(--primary)";
+        x.style.border = "1.5px solid var(--primary)";
     }
     function borderDivOnBlur() {
         let x = document.getElementById("searchForm");
@@ -22,8 +22,8 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg shadow">
             <div className="container-fluid">
                 {/* Left search form */}
-                <div className="searchForm bg-white p-1 rounded border border-2" id="searchForm" onClick={borderForDiv} onBlur={borderDivOnBlur}>
-                    <input type="text" className='searchForWeb' />
+                <div className="searchForm bg-white p-1 border border-2" id="searchForm" onClick={borderForDiv} onBlur={borderDivOnBlur}>
+                    <input type="text" className='searchForWeb' placeholder='Search here...'/>
                     <SearchOutlinedIcon className='bg-white pb-0 fs-3' role="button" />
                 </div>
 
@@ -52,7 +52,7 @@ const Navbar = () => {
                     <li className="nav-item">
                         <a className="nav-link" href="#">
                             <Badge badgeContent={2} color="primary">
-                                <ShoppingCartOutlined className='text-dark cartIcon' />
+                                <ShoppingCartOutlined className='text-dark fs-3 cartIcon' />
                             </Badge>
                         </a>
                     </li>
