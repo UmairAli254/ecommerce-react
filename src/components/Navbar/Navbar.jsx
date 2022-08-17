@@ -6,7 +6,7 @@ import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import { Badge } from '@mui/material';
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -15,6 +15,7 @@ const Navbar = () => {
         x.classList.remove("border");
         x.classList.remove("border-2");
         x.style.border = "1.5px solid var(--primary)";
+        document.querySelector(".searchForWeb").focus();
     }
     function borderDivOnBlur() {
         let x = document.getElementById("searchForm");
@@ -33,7 +34,17 @@ const Navbar = () => {
 
 
                 {/* Branding */}
-                <Link className="navbar-brand ms-auto siteBranding" to="/">E-Commerce</Link>
+                <NavLink className="navbar-brand ms-auto siteBranding" to="/" style={({ isActive }) => {
+                    return {
+                        color: isActive ? "var(--primary)" : ""
+                    }
+                }}>E-Commerce</NavLink>
+
+                <NavLink className="navbar-brand ms-auto siteBranding" to="/single-product" style={({ isActive }) => {
+                    return {
+                        color: isActive ? "var(--primary)" : ""
+                    }
+                }}>Single Product</NavLink>
 
                 {/* Right Side */}
                 <ul className="navbar-nav ms-auto mb-2 mb-lg-0 navrightSide">
@@ -63,7 +74,7 @@ const Navbar = () => {
                 </ul>
             </div>
 
-        </nav>
+        </nav >
 
     )
 }
