@@ -1,0 +1,5 @@
+.option {
+    padding: 1px 4px;
+    margin-left: 0.8rem;
+    outline: 1px solid var(--primary);
+}

@@ -1,0 +1,19 @@
+.allCategoryDiv>img {
+    width: 100% !important;
+    height: 15rem !important;
+}
+
+.card-title {
+    border-radius: 5px;
+    text-align: center;
+    width: 50%;
+    margin: auto !important;
+    text-shadow: 1px 0px 3px black;
+}
+
+
+
+.card-img-overlay a button {
+    margin-top: 5rem !important;
+    margin-left: 7rem !important;
+}

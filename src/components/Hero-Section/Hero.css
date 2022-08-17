@@ -1,5 +1,5 @@
 .hero-section {
-    height: 65vh !important;
+    height: 90vh !important;
     font-family: var(--main-font);
 }
 
@@ -7,6 +7,8 @@
     width: 100%;
     height: 75vh !important;
     transform: scale(0.8);
+    user-select: none;
+    pointer-events: none;
 }
 
 

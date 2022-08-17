@@ -1,0 +1,9 @@
+.allProductsBtn {
+    width: 9rem !important;
+    transform: scale(0.9);
+}
+
+.allProductsBtn:hover {
+    width: 9rem !important;
+    transform: scale(0.85);
+}

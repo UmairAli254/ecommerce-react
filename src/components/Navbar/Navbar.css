@@ -1,6 +1,7 @@
-.searchForm{
+.searchForm {
     border-radius: 5px;
 }
+
 .searchForWeb {
     border: none;
     outline: none;
@@ -10,7 +11,10 @@
     border: 5px solid green;
 }
 
-/*  Drop Down of account*/
+.cartIcon {
+    position: sticky !important;
+}
+
 
 .accountIcon:hover,
 .cartIcon:hover,
@@ -18,6 +22,7 @@
     color: var(--primary) !important;
 }
 
+/*  Drop Down of account*/
 .dropdown {
     position: relative;
     display: inline-block;

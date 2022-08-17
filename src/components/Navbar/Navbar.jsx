@@ -1,8 +1,12 @@
+import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+
 import { ShoppingCartOutlined } from '@mui/icons-material';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import { Badge } from '@mui/material';
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -23,13 +27,13 @@ const Navbar = () => {
             <div className="container-fluid">
                 {/* Left search form */}
                 <div className="searchForm bg-white p-1 border border-2" id="searchForm" onClick={borderForDiv} onBlur={borderDivOnBlur}>
-                    <input type="text" className='searchForWeb' placeholder='Search here...'/>
+                    <input type="text" className='searchForWeb' placeholder='Search here...' />
                     <SearchOutlinedIcon className='bg-white pb-0 fs-3' role="button" />
                 </div>
 
 
                 {/* Branding */}
-                <a className="navbar-brand ms-auto siteBranding" href="#">E-Commerce</a>
+                <Link className="navbar-brand ms-auto siteBranding" to="/">E-Commerce</Link>
 
                 {/* Right Side */}
                 <ul className="navbar-nav ms-auto mb-2 mb-lg-0 navrightSide">
