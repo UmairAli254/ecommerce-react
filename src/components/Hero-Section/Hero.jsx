@@ -42,11 +42,11 @@ const Hero = () => {
                         {/* Slide One */}
                         <SwiperSlide>
                             <div className="row hSlide1 bg-warning">
-                                <div className="col-6">
+                                <div className="col-6 heroImgDiv">
                                     <img src={Hero1} className="heroImgs rounded" />
                                 </div>
                                 <div className="col d-flex align-items-center">
-                                    <h1 className="text-start  text-bold">30% Discount, if you spend over 20k </h1>
+                                    <h1 className="text-start  text-bold heroTxt">30% Discount, if you spend over 20k </h1>
                                 </div>
                             </div>
                         </SwiperSlide>
@@ -55,9 +55,9 @@ const Hero = () => {
                         <SwiperSlide>
                             <div className="row hSlide1 bg-dark">
                                 <div className="col d-flex align-items-center">
-                                    <h1 className="text-end display-2 text-bold text-light">Buy One and Get 2 Free! </h1>
+                                    <h1 className="text-end display-2 text-bold text-light heroTxt">Buy One and Get 2 Free! </h1>
                                 </div>
-                                <div className="col-6">
+                                <div className="col-6 heroImgDiv">
                                     <img src={Hero2} className="heroImgs rounded" />
                                 </div>
                             </div>
@@ -67,9 +67,9 @@ const Hero = () => {
                         <SwiperSlide>
                             <div className="row hSlide1 bg-primary">
                                 <div className="col d-flex align-items-center">
-                                    <h1 className="text-end display-2 text-bold text-light">Feel the summer breeze! </h1>
+                                    <h1 className="text-end display-2 text-bold text-light heroTxt">Feel the summer breeze! </h1>
                                 </div>
-                                <div className="col-6">
+                                <div className="col-6 heroImgDiv">
                                     <img src={Hero3} className="heroImgs rounded" />
                                 </div>
                             </div>

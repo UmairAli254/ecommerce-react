@@ -22,6 +22,27 @@
 
 }
 
-.swiper-pagination-progressbar-fill{
+.swiper-pagination-progressbar-fill {
     background-color: var(--primary) !important;
+}
+
+@media screen and (max-width: 480px) {
+    .hero-section{
+        width: 100vw !important;
+        height: 50vh !important;
+    }
+    .heroImgDiv {
+        display: none;
+    }
+
+    .vanBtns{
+        display: none !important;
+    }
+
+    .heroTxt{
+        height: 25vh !important;
+        font-size: 2rem !important;
+        width: 100%;
+        padding: 10px 20px !important; 
+    }
 }

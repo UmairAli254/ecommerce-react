@@ -1,6 +1,10 @@
 .option {
-    padding: 1px 4px;
+    padding: 5px 6px;
     margin-left: 0.8rem;
-    outline: 1px solid var(--primary);
     cursor: pointer;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    border: none;
+    outline: none;
 }
+

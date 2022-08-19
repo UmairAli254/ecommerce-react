@@ -79,6 +79,9 @@
     .searchForm {
         display: none
     }
+    .NavPages{
+        display: none;
+    }
 
     .siteBranding {
         margin-left: 0rem !important;

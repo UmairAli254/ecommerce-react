@@ -32,7 +32,6 @@ const Navbar = () => {
                     <SearchOutlinedIcon className='bg-white pb-0 fs-3' role="button" />
                 </div>
 
-
                 {/* Branding */}
                 <NavLink className="navbar-brand ms-auto siteBranding" to="/" style={({ isActive }) => {
                     return {
@@ -40,7 +39,13 @@ const Navbar = () => {
                     }
                 }}>E-Commerce</NavLink>
 
-                <NavLink className="navbar-brand ms-auto siteBranding" to="/single-product" style={({ isActive }) => {
+                <NavLink className="navbar-brand ms-auto NavPages" to="/all-products" style={({ isActive }) => {
+                    return {
+                        color: isActive ? "var(--primary)" : ""
+                    }
+                }}>Products</NavLink>
+
+                <NavLink className="navbar-brand ms-auto NavPages" to="/single-product" style={({ isActive }) => {
                     return {
                         color: isActive ? "var(--primary)" : ""
                     }
@@ -57,19 +62,28 @@ const Navbar = () => {
                         <div class="dropdown">
                             <span><AccountCircleOutlinedIcon className='fs-3 accountIcon' /></span>
                             <div class="dropdown-content">
-                                <a href="#" >Register</a><br />
-                                <a href="#" >Login</a>
+                                <NavLink to="/register" style={({ isActive }) => {
+                                    return {
+                                        color: isActive ? "var(--primary)" : ""
+                                    }
+                                }}>Register</NavLink><br />
+
+                                <NavLink to="login" style={({ isActive }) => {
+                                    return {
+                                        color: isActive ? "var(--primary)" : ""
+                                    }
+                                }}>Login</NavLink>
                             </div>
                         </div>
 
                     </li>
 
                     <li className="nav-item">
-                        <a className="nav-link" href="#">
+                        <NavLink className="nav-link" to="/cart">
                             <Badge badgeContent={2} color="primary">
                                 <ShoppingCartOutlined className='text-dark fs-3 cartIcon' />
                             </Badge>
-                        </a>
+                        </NavLink>
                     </li>
                 </ul>
             </div>

@@ -18,7 +18,7 @@ const Product = (props) => {
 
 
     return (
-        <div className="col-3 mb-3">
+        <div className="col-12 col-md-3 col-sm-12 col-xs-12 mb-3">
             <div className="card text-bg-dark product_div" role="button" onMouseEnter={showOverLay}
                 onMouseLeave={hideOverLay}>
                 <img src={img} className="product-img" />

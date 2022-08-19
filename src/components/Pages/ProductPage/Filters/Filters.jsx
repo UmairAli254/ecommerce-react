@@ -16,7 +16,7 @@ const Filters = () => {
                         <option> Small </option>
                     </select>
 
-                    <select name="color" id="color" className="colorOption option">
+                    <select className="mt-2 colorOption option" name="color" id="color">
                         <option disabled> Color </option>
                         <option> Red </option>
                         <option> Blue </option>

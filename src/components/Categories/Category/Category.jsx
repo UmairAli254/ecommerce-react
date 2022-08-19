@@ -16,7 +16,7 @@ const Category = ({ Data }) => {
 
 
     return (
-        <div className="col h-50">
+        <div className="col col-12 col-lg-4 col-md-4 col-sm-12 h-50 mb-1">
             <div className="card text-bg-dark allCategoryDiv" role="button" onMouseEnter={showOverLay}
                 onMouseLeave={hideOverLay}>
                 <img src={img} className="card-img" />

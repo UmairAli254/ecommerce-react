@@ -1,9 +1,9 @@
-.card{
-	background-color: var(--primary);
+.cardNewsLetter {
+    background-color: var(--primary) !important;
 }
 
-.text-color{
-	color: #eee !important;
+.text-color {
+    color: #eee !important;
 }
 
 .form-control {
@@ -46,9 +46,23 @@
     font-size: .875rem;
     line-height: 1.5;
     border-radius: .375rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-.newsletterContainer{
+.newsletterContainer {
     margin-bottom: -3rem !important;
+}
+
+@media screen and (max-width: 480px) {
+    .rowofinput {
+        position: relative !important;
+    }
+
+    .newLetterBtn {
+
+        transform: scale(0.7);
+        margin-right: -1rem !important;
+        margin-top: 0.5rem;
+        padding: 10px 7px !important;
+    }
 }

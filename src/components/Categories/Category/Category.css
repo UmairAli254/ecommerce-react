@@ -1,6 +1,7 @@
 .allCategoryDiv>img {
     width: 100% !important;
     height: 15rem !important;
+    overflow-y: hidden !important;
 }
 
 .card-title {
